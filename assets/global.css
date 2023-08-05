@@ -489,10 +489,45 @@ html, body {
   min-width: 300px;
 }
 
-.main-button__small {
-  padding: 0.5rem 4rem 0.5rem 1rem;
-  min-width: 240px;
+/* -------------------- */
+
+.active-link-footer {
+  position: relative;
+  width: fit-content;
+
+  font-weight: bold;
 }
+
+.active-link-footer::before {
+  content: '';
+  width: 100%;
+  
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+
+  height: 1px;
+  background-color: white;
+}
+
+.footer-form {
+  transform: scale(0.8);
+}
+
+.footer-form button {
+  transform: skewX(-20deg) scale(0.7);
+}
+
+.footer {
+  background: #0f0f0f;
+}
+
+.legal span {
+  font-size: 14px;
+}
+
+/* -------------------- */
+
 
 
 @media (max-width: 1480px) {
@@ -579,6 +614,10 @@ html, body {
 
   .contact-form {
     min-width: 270px;
+  }
+
+  .footer-form button {
+    transform: skewX(-20deg) scale(1);
   }
 }
 
