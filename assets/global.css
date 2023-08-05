@@ -73,7 +73,7 @@ html, body {
 
   transform: skewX(-20deg);
 
-  border: 2px solid #131313;
+  border: 1px solid #131313;
 }
 
 .main-button__header {
@@ -96,7 +96,7 @@ html, body {
 }
 
 .main-button__border {
-  border: 2px solid var(--main-blue);
+  border: 1px solid var(--main-blue);
 }
 
 .button-arrow {
@@ -108,15 +108,15 @@ html, body {
   line-height: 0;
 
   width: 5rem;
-  height: calc(100% + 4px);
+  height: calc(100% + 2px);
 
   background-color: white;
 
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
 
-  top: -2px;
-  right: -2px;
+  top: -1px;
+  right: -1px;
 }
 
 .button-arrow__header {
@@ -452,6 +452,48 @@ html, body {
 
 /* -------------------- */
 
+#contact {
+  width: 100%;
+
+  background-color: #131313;
+  /* background: radial-gradient(92.15% 92.15% at 58.82% 57.59%, #0F0F0F 0%, rgba(0, 0, 0, 0) 100%); */
+
+  display: flex;
+  justify-content: center;
+  align-items: start;
+
+  gap: 5rem;
+
+  padding: 5rem;
+}
+
+.custom-input input:focus ~ .input-group-text {
+  border-color: #86b7fe;
+
+  transition: 150ms ease-in;
+}
+
+.custom-input input, .custom-input textarea, .custom-input .input-group-text {
+  border-color: var(--main-blue);
+  border-radius: 1px;
+  color: white !important;
+  box-shadow: none !important;
+
+  transition: 150ms ease-in;
+}
+
+.contact-form {
+  width: 100%;
+
+  max-width: 550px;
+  min-width: 300px;
+}
+
+.main-button__small {
+  padding: 0.5rem 4rem 0.5rem 1rem;
+  min-width: 240px;
+}
+
 
 @media (max-width: 1480px) {
   .descritive-content {
@@ -524,6 +566,19 @@ html, body {
     width: 100%;
 
     height: 50%;
+  }
+
+  #contact {
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+
+    padding: 3rem 1rem;
+  }
+
+  .contact-form {
+    min-width: 270px;
   }
 }
 
