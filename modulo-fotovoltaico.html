@@ -37,7 +37,8 @@
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav gap-4 w-100 justify-content-center">
           <a class="nav-link text-white fs-5 p-0" href="/index.html">Início</a>
-          <a class="nav-link text-white fs-5 p-0 active active-link" aria-current="page" href="/modulo-fotovoltaico.html">Módulo
+          <a class="nav-link text-white fs-5 p-0 active active-link" aria-current="page"
+            href="/modulo-fotovoltaico.html">Módulo
             Fotovoltaico</a>
           <a class="nav-link text-white fs-5 p-0" href="#">Quem somos</a>
           <a class="nav-link text-white fs-5 p-0" href="#">Suporte</a>
@@ -88,6 +89,181 @@
     <div class="modulo">
       <img draggable="false" src="./assets/img/modulo.png" />
       <div class="flare"></div>
+    </div>
+  </section>
+
+  <section id="diferenciais">
+    <div class="d-flex flex-column gap-3 diferentials-descritive">
+      <div class="text-center text-lg-start">
+        <h1 class="section2-subtitle fw-light mx-auto mx-lg-0">NOSSOS</h1>
+        <h1 class="section2-title floating-bar mx-lg-0">DIFERENCIAIS</h1>
+      </div>
+
+      <div class="d-flex flex-column">
+        <h1 class="fw-bold fs-1 text-white">
+          <i class="bi bi-plus" style="color: var(--main-blue); font-size: 50px;"></i>
+          Qualidade
+        </h1>
+        <hr class="border border-primary border-1 m-0 opacity-25">
+        <h1 class="fw-bold fs-1 text-white">
+          <i class="bi bi-plus" style="color: var(--main-blue); font-size: 50px;"></i>
+          Eficiência
+        </h1>
+        <hr class="border border-primary border-1 m-0 opacity-25">
+      </div>
+
+
+      <button class="main-button main-button__border bg-transparent mt-3 mx-auto mx-xl-0">
+        <span class="fs-6">ENTRE EM CONTATO</span>
+        <div class="button-arrow">
+          <i class="bi bi-arrow-right fs-5"></i>
+        </div>
+      </button>
+    </div>
+
+    <div id="diferential-double" class="carousel slide w-75 double-carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="d-flex gap-4">
+            <div class="diferential-card text-white">
+              <img src="./assets/img/solar-icon.svg" />
+              <h5>TECNOLOGIA <br /> M10 MBB</h5>
+              <p>Maior tamanho da área de captação de luz e maior conversão de eficiência do módulo</p>
+            </div>
+            <div class="diferential-card text-white">
+              <img src="./assets/img/panel-icon.svg" />
+              <h5>CÉLULAS DE ALTA EFICIÊNCIA GARANTIA
+                DE ALTO RENDIMENTO
+                DO MÓDULO</h5>
+              <p>Células MBB de alta eficiência de grau A, aumente a potência de geração reduzindo a taxa de retorno
+                sobre o investimento</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex gap-4">
+            <div class="diferential-card text-white">
+              <img src="./assets/img/thermometer-icon.svg" />
+              <h5>CÉLULAS <br /> ESPECIAIS</h5>
+              <p>Reduz efetivamente a temperatura
+                e a corrente de trabalho, melhora
+                a geração com pouca luz e desempenho à sombra</p>
+            </div>
+            <div class="diferential-card text-white">
+              <img src="./assets/img/sun-and-panel-icon.svg" />
+              <h5>TAMANHO E PESO DO MÓDULO OTIMIZADOS</h5>
+              <p>Maior tamanho da área de captação de luz e maior conversão de eficiência do módulo.</p>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="d-flex gap-4">
+            <div class="diferential-card text-white">
+              <img src="./assets/img/energy-icon.svg" />
+              <h5>CAPACIDADE
+                DE GERAÇÃO ESTÁVEL
+                E GARANTIA DE
+                PERDA DE ENERGIA
+              </h5>
+              <p>Garantia de saída de energia de 0~+5W, degradação de energia no 1º ano 2%, Degradação de energia do 2º
+                ao 25º ano 0,6%
+              </p>
+            </div>
+            <div class="diferential-card text-white">
+              <img src="./assets/img/green-panel-icon.svg" />
+              <h5>EXCELENTE
+                ADAPTABILIDADE
+                AMBIENTAL E CAPACIDADE
+                ANTIENVELHECIMENTO
+              </h5>
+              <p>Reduz efetivamente a temperatura e a corrente de trabalho, melhora
+                a geração com pouca luz e desempenho à sombra</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="diferentials-pulse pulsing-button">
+        <button style="background-color: #262626;" onclick="toggleActiveOpnion()" type="button"
+          data-bs-target="#diferential-double" data-bs-slide="next">
+          <i class="bi bi-arrow-right fs-1" style="color: white"></i>
+          <div class="pulse"></div>
+        </button>
+      </div>
+    </div>
+
+    <div id="diferential-simple" class="carousel slide simple-carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="diferential-card text-white">
+            <img src="./assets/img/solar-icon.svg" />
+            <h5>TECNOLOGIA <br /> M10 MBB</h5>
+            <p>Maior tamanho da área de captação de luz e maior conversão de eficiência do módulo</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="diferential-card text-white">
+            <img src="./assets/img/panel-icon.svg" />
+            <h5>CÉLULAS DE ALTA EFICIÊNCIA GARANTIA
+              DE ALTO RENDIMENTO
+              DO MÓDULO</h5>
+            <p>Células MBB de alta eficiência de grau A, aumente a potência de geração reduzindo a taxa de retorno
+              sobre o investimento</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+
+          <div class="diferential-card text-white">
+            <img src="./assets/img/thermometer-icon.svg" />
+            <h5>CÉLULAS <br /> ESPECIAIS</h5>
+            <p>Reduz efetivamente a temperatura
+              e a corrente de trabalho, melhora
+              a geração com pouca luz e desempenho à sombra</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+
+          <div class="diferential-card text-white">
+            <img src="./assets/img/sun-and-panel-icon.svg" />
+            <h5>TAMANHO E PESO DO MÓDULO OTIMIZADOS</h5>
+            <p>Maior tamanho da área de captação de luz e maior conversão de eficiência do módulo.</p>
+          </div>
+        </div>
+
+      <div class="carousel-item">
+        <div class="diferential-card text-white">
+          <img src="./assets/img/energy-icon.svg" />
+          <h5>CAPACIDADE
+            DE GERAÇÃO ESTÁVEL
+            E GARANTIA DE
+            PERDA DE ENERGIA
+          </h5>
+          <p>Garantia de saída de energia de 0~+5W, degradação de energia no 1º ano 2%, Degradação de energia do 2º
+            ao 25º ano 0,6%
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class="diferential-card text-white">
+          <img src="./assets/img/green-panel-icon.svg" />
+          <h5>EXCELENTE
+            ADAPTABILIDADE
+            AMBIENTAL E CAPACIDADE
+            ANTIENVELHECIMENTO
+          </h5>
+          <p>Reduz efetivamente a temperatura e a corrente de trabalho, melhora
+            a geração com pouca luz e desempenho à sombra</p>
+        </div>
+      </div>
+    </div>
+    <div class="diferentials-pulse pulsing-button">
+      <button style="background-color: #262626;" onclick="toggleActiveOpnion()" type="button"
+        data-bs-target="#diferential-simple" data-bs-slide="next">
+        <i class="bi bi-arrow-right fs-1" style="color: white"></i>
+        <div class="pulse"></div>
+      </button>
+    </div>
+    </div>
+
     </div>
   </section>
 
