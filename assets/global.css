@@ -528,7 +528,31 @@ html, body {
 
 /* -------------------- */
 
+#modulo-solar-main {
+  position: relative;
 
+  background-image: url('./img/home-sec-2.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: fit-content;
+
+  padding-bottom: 10vw;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+#modulo-solar-main .modulo {
+  bottom: -12vw;
+  right: 5%;
+}
+
+.bi-arrow-down-circle {
+  animation: bounce 2s ease-in-out infinite alternate-reverse;
+}
 
 @media (max-width: 1480px) {
   .descritive-content {
@@ -651,7 +675,7 @@ html, body {
     text-align: center;
   }
 
-  #modulo-solar {
+  #modulo-solar, #modulo-solar-main {
     align-items: center;
   }
 }
@@ -666,4 +690,8 @@ html, body {
 
 @keyframes pulse {
   to { transform: scale(1.4); opacity: 0; }
+}
+
+@keyframes bounce {
+  to { transform: translateY(10px); }
 }
