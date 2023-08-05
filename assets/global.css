@@ -622,6 +622,27 @@ html, body {
   width: 50%;
 }
 
+/* -------------------- */
+
+#certificados {
+  position: relative;
+
+  background-image: url('./img/modulo-sec-3.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75%;
+
+  height: fit-content;
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem 14.5vw;
+
+  overflow: hidden;
+}
+
 
 @media (max-width: 1480px) {
   .descritive-content {
@@ -785,6 +806,10 @@ html, body {
   #modulo-solar, #modulo-solar-main {
     align-items: center;
   }
+
+  #certificados {
+    padding: 3rem;
+  }
 }
 
 @media (max-width: 496px) {
@@ -804,6 +829,10 @@ html, body {
 
   #diferenciais {
     padding-bottom: 4rem;
+  }
+
+  #certificados {
+    padding: 3rem 1rem;
   }
 }
 
