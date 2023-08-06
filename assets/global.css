@@ -14,6 +14,8 @@
 html, body {
   width: 100%;
   height: 100%;
+
+  position: relative;
 }
 
 .active-link {
@@ -531,7 +533,7 @@ html, body {
 #modulo-solar-main {
   position: relative;
 
-  background-image: url('./img/home-sec-2.jpg');
+  background-image: url('./img/modulo-sec-2.png');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -586,7 +588,7 @@ html, body {
 
   background-image: url('./img/diferential-card.png');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 
   width: 100%;
 
@@ -603,6 +605,11 @@ html, body {
 
 .diferential-card p {
   margin-top: 0.875rem;
+  font-size: clamp(14px, 1vw, 32px);
+}
+
+.diferential-card h5 {
+  font-size: clamp(16px, 1.4vw, 34px);
 }
 
 .diferentials-pulse {
@@ -641,6 +648,10 @@ html, body {
   padding: 5rem 14.5vw;
 
   overflow: hidden;
+}
+
+#certificados svg {
+  min-width: 28px;
 }
 
 /* -------------------- */
@@ -718,17 +729,81 @@ html, body {
   margin-top: 0.5rem;
 }
 
+/* -------------------- */
+
+#suporte {
+  position: relative;
+
+  background-image: url('./img/suporte.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  height: fit-content;
+  min-height: 100%;
+
+  padding: 5rem 0 5rem 14.4vw;
+}
+
+.contact-container {
+  width: 28.8vw;
+  min-width: 350px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.go-up {
+  all: unset;
+  z-index: 10;
+
+  display: grid;
+  place-items: center;
+
+  width: 50px;
+  height: 50px;
+
+  position: fixed;
+  bottom: 23%;
+  left: 7.5vw;
+
+  cursor: pointer;
+
+  background: white;
+  color: black;
+
+  border-radius: 9999px;
+}
+
+.whatsapp {
+  all: unset;
+  z-index: 10;
+
+  display: grid;
+  place-items: center;
+
+  width: 50px;
+  height: 50px;
+
+  position: fixed;
+  bottom: 23%;
+  right: 7.5vw;
+
+  cursor: pointer;
+
+  background: linear-gradient(180deg, #24CC63 0%, #11887A 100%);
+  color: white;
+
+  border-radius: 9999px;
+}
+
 @media (max-width: 1480px) {
   .descritive-content {
     padding-left: 10vw;
-  }
-
-  .double-carousel {
-    display: none;
-  }
-
-  .simple-carousel {
-    display: flex;
   }
 
   #diferenciais {
@@ -747,16 +822,14 @@ html, body {
     margin: auto;
   }
 
-  .diferentials-pulse {
-    right: calc(50% - 220px);
-    bottom: 10%;
-    transform: scale(0.8) translate(50%, 50%);
-  }
-
   .diferentials-descritive {
     align-items: center;
 
     width: 100%;
+  }
+
+  #suporte {
+    padding-left: 25vw;
   }
 }
 
@@ -843,6 +916,20 @@ html, body {
   .footer-form button {
     transform: skewX(-20deg) scale(1);
   }
+
+  .double-carousel {
+    display: none;
+  }
+
+  .simple-carousel {
+    display: flex;
+  }
+
+  .diferentials-pulse {
+    right: calc(50% - 220px);
+    bottom: 10%;
+    transform: scale(0.8) translate(50%, 50%);
+  }
 }
 
 @media (max-width: 992px) {
@@ -884,6 +971,12 @@ html, body {
   #certificados {
     padding: 3rem;
   }
+
+  #suporte {
+    padding: 3rem 1rem;
+    align-items: center;
+  }
+
 }
 
 @media (max-width: 496px) {
@@ -906,6 +999,11 @@ html, body {
   }
 
   #certificados {
+    padding: 3rem 1rem;
+  }
+
+
+  #quem-somos {
     padding: 3rem 1rem;
   }
 
