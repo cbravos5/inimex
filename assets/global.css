@@ -643,6 +643,22 @@ html, body {
   overflow: hidden;
 }
 
+/* -------------------- */
+
+#quem-somos {
+  position: relative;
+
+  background-image: url('./img/quem-somos-sec-1.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 75%;
+  background-color: #131313;
+
+  height: fit-content;
+  padding: 5rem 14.5vw;
+
+  overflow: hidden;
+}
 
 @media (max-width: 1480px) {
   .descritive-content {
