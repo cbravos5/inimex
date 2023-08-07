@@ -61,21 +61,27 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  border-radius: 2px;
+  gap: 5px;
 
   width: 21vw;
   min-width: fit-content;
 
   padding: 1rem 6rem 1rem 2rem;
 
-  gap: 5px;
-
   color: white;
+  text-decoration: none;
 
   transform: skewX(-20deg);
 
   border: 1px solid #131313;
+  border-radius: 2px;
+
+  transition: 100ms linear;
+}
+
+.main-button:hover {
+  filter: brightness(75%);
+  transform: skewX(-20deg) scale(1.02);
 }
 
 .main-button__header {
@@ -520,6 +526,11 @@ html, body {
   transform: skewX(-20deg) scale(0.7);
 }
 
+.footer-form button:hover {
+  filter: brightness(75%);
+  transform: skewX(-20deg) scale(0.72);
+}
+
 .footer {
   background: #0f0f0f;
 }
@@ -533,7 +544,7 @@ html, body {
 #modulo-solar-main {
   position: relative;
 
-  background-image: url('./img/modulo-sec-2.png');
+  background-image: url('./img/modulo-sec-1.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -637,7 +648,6 @@ html, body {
   background-image: url('./img/modulo-sec-3.png');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 75%;
 
   height: fit-content;
   min-height: 100%;
@@ -669,6 +679,11 @@ html, body {
 
   overflow: hidden;
 }
+
+#quem-somos p {
+  font-size: clamp(12px, 0.93vw, 32px);
+}
+
 
 /* -------------------- */
 
@@ -826,10 +841,6 @@ html, body {
     align-items: center;
 
     width: 100%;
-  }
-
-  #suporte {
-    padding-left: 25vw;
   }
 }
 

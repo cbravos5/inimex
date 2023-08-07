@@ -25,7 +25,7 @@
 <body>
   <nav class="navbar navbar-expand-xl p-0 main-nav">
     <div class="container-fluid py-2 px-lg-5 gap-3" style="background: #131313;">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="/index.html">
         <img src="./assets/img/logo.svg" alt="Logo" class="d-inline-block align-text-top navbar-logo">
       </a>
 
@@ -44,24 +44,25 @@
           <a class="nav-link text-white fs-5 p-0" href="/suporte.html">Suporte</a>
         </div>
 
-        <button class="main-button main-button_collapse
-                       main-button__header main-button__dark
-                       main-button__border main-button__header
-                       d-xl-none">
+        <a class="main-button main-button_collapse
+                        main-button__header main-button__dark
+                        main-button__border main-button__header
+                        d-xl-none" href="/suporte.html">
           <span>ENTRE EM CONTATO</span>
           <div class="button-arrow button-arrow__header">
             <i class="bi bi-arrow-right fs-5"></i>
           </div>
-        </button>
+        </a>
       </div>
-      <button class="main-button main-button__dark
-                     main-button__border ml-auto 
-                     main-button__header main-button__hide">
+      <a class="main-button main-button_collapse
+                      main-button__header main-button__dark
+                      main-button__border main-button__header
+                      main-button__hide" href="/suporte.html">
         <span>ENTRE EM CONTATO</span>
         <div class="button-arrow button-arrow__header">
           <i class="bi bi-arrow-right fs-5"></i>
         </div>
-      </button>
+      </a>
     </div>
   </nav>
 
@@ -229,53 +230,56 @@
           </div>
         </div>
 
-      <div class="carousel-item">
-        <div class="diferential-card text-white">
-          <img src="./assets/img/energy-icon.svg" />
-          <h5>CAPACIDADE
-            DE GERAÇÃO ESTÁVEL
-            E GARANTIA DE
-            PERDA DE ENERGIA
-          </h5>
-          <p>Garantia de saída de energia de 0~+5W, degradação de energia no 1º ano 2%, Degradação de energia do 2º
-            ao 25º ano 0,6%
-          </p>
+        <div class="carousel-item">
+          <div class="diferential-card text-white">
+            <img src="./assets/img/energy-icon.svg" />
+            <h5>CAPACIDADE
+              DE GERAÇÃO ESTÁVEL
+              E GARANTIA DE
+              PERDA DE ENERGIA
+            </h5>
+            <p>Garantia de saída de energia de 0~+5W, degradação de energia no 1º ano 2%, Degradação de energia do 2º
+              ao 25º ano 0,6%
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="diferential-card text-white">
+            <img src="./assets/img/green-panel-icon.svg" />
+            <h5>EXCELENTE
+              ADAPTABILIDADE
+              AMBIENTAL E CAPACIDADE
+              ANTIENVELHECIMENTO
+            </h5>
+            <p>Reduz efetivamente a temperatura e a corrente de trabalho, melhora
+              a geração com pouca luz e desempenho à sombra</p>
+          </div>
         </div>
       </div>
-      <div class="carousel-item">
-        <div class="diferential-card text-white">
-          <img src="./assets/img/green-panel-icon.svg" />
-          <h5>EXCELENTE
-            ADAPTABILIDADE
-            AMBIENTAL E CAPACIDADE
-            ANTIENVELHECIMENTO
-          </h5>
-          <p>Reduz efetivamente a temperatura e a corrente de trabalho, melhora
-            a geração com pouca luz e desempenho à sombra</p>
-        </div>
+      <div class="diferentials-pulse pulsing-button">
+        <button style="background-color: #262626;" onclick="toggleActiveOpnion()" type="button"
+          data-bs-target="#diferential-simple" data-bs-slide="next">
+          <i class="bi bi-arrow-right fs-1" style="color: white"></i>
+          <div class="pulse"></div>
+        </button>
       </div>
-    </div>
-    <div class="diferentials-pulse pulsing-button">
-      <button style="background-color: #262626;" onclick="toggleActiveOpnion()" type="button"
-        data-bs-target="#diferential-simple" data-bs-slide="next">
-        <i class="bi bi-arrow-right fs-1" style="color: white"></i>
-        <div class="pulse"></div>
-      </button>
-    </div>
     </div>
 
     </div>
   </section>
 
   <section id="certificados">
-    <h1 class="section2-title fw-light mb-5 mx-auto mx-lg-0 text-center">CERTIFICADOS <strong class="fw-bold">ABRANGENTES</strong> </h1>
+    <h1 class="section2-title fw-light mb-5 mx-auto mx-lg-0 text-center">CERTIFICADOS <strong
+        class="fw-bold">ABRANGENTES</strong> </h1>
 
     <div class="d-flex flex-column" style="color: var(--main-blue)">
 
       <div class="d-flex align-items-start gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
-          <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+          <path
+            d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+          <path
+            d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
         </svg>
         <h4 class="text-white m-0">IEC61215 | IEC61730 | IEC 61701 | CE | INMETRO</h4>
       </div>
@@ -283,8 +287,10 @@
       <hr class="border border-gray border-1 opacity-50 my-3">
       <div class="d-flex align-items-start gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
-          <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+          <path
+            d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+          <path
+            d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
         </svg>
         <h4 class="text-white m-0">ISO 9001</h4>
       </div>
@@ -292,8 +298,10 @@
       <hr class="border border-gray border-1 opacity-50 my-3">
       <div class="d-flex align-items-start gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
-          <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+          <path
+            d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+          <path
+            d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
         </svg>
         <h4 class="text-white m-0">2015 Quality Management System</h4>
       </div>
@@ -301,8 +309,10 @@
       <hr class="border border-gray border-1 opacity-50 my-3">
       <div class="d-flex align-items-start gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
-          <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+          <path
+            d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+          <path
+            d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
         </svg>
         <h4 class="text-white m-0">ISSO 14001</h4>
       </div>
@@ -310,8 +320,10 @@
       <hr class="border border-gray border-1 opacity-50 my-3">
       <div class="d-flex align-items-start gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
-          <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+          <path
+            d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+          <path
+            d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
         </svg>
         <h4 class="text-white m-0">2015 Environmental Management System</h4>
       </div>
@@ -319,18 +331,22 @@
       <hr class="border border-gray border-1 opacity-50 my-3">
       <div class="d-flex align-items-start gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
-          <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+          <path
+            d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+          <path
+            d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
         </svg>
         <h4 class="text-white m-0">ISO45001</h4>
       </div>
-      
+
       <hr class="border border-gray border-1 opacity-50 my-3">
 
       <div class="d-flex align-items-start gap-2">
         <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" viewBox="0 0 16 16">
-          <path d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z"/>
-          <path d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+          <path
+            d="M3 14.5A1.5 1.5 0 0 1 1.5 13V3A1.5 1.5 0 0 1 3 1.5h8a.5.5 0 0 1 0 1H3a.5.5 0 0 0-.5.5v10a.5.5 0 0 0 .5.5h10a.5.5 0 0 0 .5-.5V8a.5.5 0 0 1 1 0v5a1.5 1.5 0 0 1-1.5 1.5H3z" />
+          <path
+            d="m8.354 10.354 7-7a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z" />
         </svg>
         <h4 class="text-white m-0">2018 Occupational Health na Safety Management System</h4>
       </div>
@@ -339,7 +355,8 @@
 
   </section>
 
-  <section class="d-flex flex-column gap-5 flex-lg-row align-items-center p-5 justify-content-center" style="background: black">
+  <section class="d-flex flex-column gap-5 flex-lg-row align-items-center p-5 justify-content-center"
+    style="background: black">
     <div class="text-center text-lg-start me-lg-5 me-0">
       <h1 class="section2-subtitle fw-light mx-auto mx-lg-0">QUALIDADE</h1>
       <h1 class="section2-title floating-bar mx-lg-0">GARANTIDA</h1>
